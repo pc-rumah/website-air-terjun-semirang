@@ -99,4 +99,10 @@ class OrderController extends Controller
 
         return view('etiket.invoice', compact('order'));
     }
+
+    public function index()
+    {
+        $orders = Order::all();
+        return view('datatiket.index', compact('orders'));
+    }
 }

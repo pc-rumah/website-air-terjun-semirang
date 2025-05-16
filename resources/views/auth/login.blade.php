@@ -93,6 +93,15 @@
 
                     <!-- Login Button -->
                     <button type="submit" class="btn btn-block btn-primary">Login</button>
+                    @if ($errors->any())
+                        <div class="alert alert-error shadow-sm text-xs sm:text-sm">
+                            <ul class="list-disc pl-4 space-y-1">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </form>
             </div>
         </div>

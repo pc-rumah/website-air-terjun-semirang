@@ -74,6 +74,15 @@
                         <span class="hide-menu">Struktur</span>
                     </a>
                 </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link {{ Request::is('datapembeli*') ? 'active' : '' }}"
+                        href="{{ route('datapembeli') }}" aria-expanded="false">
+                        <span>
+                            <i class="ti ti-cards"></i>
+                        </span>
+                        <span class="hide-menu">Data Pembeli</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- End Sidebar navigation -->

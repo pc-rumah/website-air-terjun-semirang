@@ -346,7 +346,10 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Beli Tiket Masuk</h2>
-                <p>Pembelian Tiket Bisa Secara Online dan Offline</p>
+                <p>Pembelian Tiket Bisa Secara Online dan Offline
+                <h3> <span class="badge text-bg-primary">Gunakan Email
+                        Asli untuk Pengiriman Tiket</span> </h3>
+                </p>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">

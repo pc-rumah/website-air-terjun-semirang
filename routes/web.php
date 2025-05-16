@@ -32,6 +32,7 @@ use App\Http\Controllers\DokumentasiController;
 |
 */
 
+Route::redirect('/admin', '/dashboard');
 Route::get('/', [WelcomeController::class, 'index'])->name('welcome.index');
 Route::get('all_dok', [WelcomeController::class, 'all'])->name('all');
 Route::get('welcome/{welcome}', [WelcomeController::class, 'show'])->name('welcome.show');
@@ -54,6 +55,7 @@ Route::middleware('auth')->group(function () {
 
     Route::put('welcome/{welcome}', [WelcomeController::class, 'update'])->name('welcome.update');
     Route::get('page', [WelcomeController::class, 'page'])->name('page');
+    Route::get('datapembeli', [OrderController::class, 'index'])->name('datapembeli');
 });
 
 require __DIR__ . '/auth.php';
